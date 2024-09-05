@@ -1,0 +1,42 @@
+Source: angelfish
+Section: web
+Priority: optional
+Maintainer: Deepak Kumar <notwho53@gmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+  debhelper-compat (= 13),
+  cmake,
+  extra-cmake-modules,
+  kirigami2-dev,
+  kirigami-addons5-dev,
+  libkf5config-dev (>= 5.84~),
+  libkf5coreaddons-dev (>= 5.84~),
+  libkf5dbusaddons-dev (>= 5.84~),
+  libkf5i18n-dev (>= 5.84~),
+  libkf5purpose-dev (>= 5.84~),
+  libkf5windowsystem-dev (>= 5.84~),
+  libkf5qqc2desktopstyle-dev,
+  libqt5sql5-sqlite,
+  libqt5svg5-dev,
+  qtbase5-dev,
+  qtquickcontrols2-5-dev,
+  qtwebengine5-dev,
+  qtfeedback5-dev,
+  libkf5notifications-dev (>= 5.84~),
+  librust-cmake-dev
+Standards-Version: 4.7.0
+Vcs-Browser: https://github.com/WHO53/angelfish
+Vcs-Git: https://github.com/WHO53/angelfish.git
+
+Package: angelfish
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ qml-module-org-kde-kirigami2,
+ qml-module-qtfeedback,
+ qml-module-qtwebengine,
+ qml-module-org-kde-kirigami-addons-labs-components,
+ qml-module-org-kde-qqc2desktopstyle,
+ qml-module-qt-labs-qmlmodels
+Description: A browser by KDE ig.
